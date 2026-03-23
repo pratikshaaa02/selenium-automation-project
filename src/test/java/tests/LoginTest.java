@@ -9,7 +9,9 @@ import utils.ConfigReader;
 import utils.TestData;
 
 public class LoginTest extends BaseTest {
+	
 
+	
 	@Test(dataProvider = "loginData",
 		      dataProviderClass = TestData.class,
 		      retryAnalyzer = utils.Retry.class)

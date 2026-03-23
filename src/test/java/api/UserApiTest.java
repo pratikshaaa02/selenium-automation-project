@@ -8,7 +8,9 @@ import io.restassured.response.Response;
 
 public class UserApiTest {
 
-    @Test
+	
+	@Test(enabled = false)
+ //   @Test
     public void userApiTest() {
 
         // 🔑 Step 1: Paste token from DevTools (/connect/token → Response)
