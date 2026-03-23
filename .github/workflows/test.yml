@@ -11,14 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Java
+      - name: Setup Java 11 (IMPORTANT)
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '17'
-
-      - name: Setup Maven
-        run: mvn -version
+          java-version: '11'
 
       - name: Run Tests
         run: mvn clean test
