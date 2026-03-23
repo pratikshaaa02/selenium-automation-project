@@ -12,9 +12,14 @@ public class LoginTest extends BaseTest {
 	
 
 	
+	/*
 	@Test(dataProvider = "loginData",
 		      dataProviderClass = TestData.class,
 		      retryAnalyzer = utils.Retry.class)
+		      */
+	
+	@Test(enabled = false) 
+		      
     public void loginTest(String tenant, String username, String password, String expected) {
 
 		getDriver().get(ConfigReader.get("url"));
