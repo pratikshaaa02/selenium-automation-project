@@ -1,0 +1,13 @@
+<suite name="Nextere Suite" verbose="2">
+
+    <listeners>
+        <listener class-name="reports.TestListener"/>
+    </listeners>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+
+</suite>
