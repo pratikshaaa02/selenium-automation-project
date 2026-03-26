@@ -11,8 +11,8 @@ import reports.TestListener;
 @Listeners(TestListener.class)
 public class LoginNegativeTest extends BaseTest {
 
-	@Test(enabled = false)
-	//@Test
+	//@Test(enabled = false)
+	@Test
     public void invalidLoginTest() {
 
         LoginPage loginPage = new LoginPage(getDriver());
